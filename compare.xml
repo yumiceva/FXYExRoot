@@ -1,0 +1,109 @@
+<cuy>
+
+  <validation type="MG" file="./results_gen_madgraph.root" weight="1">
+    <TH1 name="photon_pt_MG" source="photon_pt"/>
+    <TH1 name="photon_eta_MG" source="photon_eta"/>
+    <TH1 name="photon_phi_MG" source="photon_phi"/>
+    <TH1 name="photon_deltaRLep_MG" source="photon_deltaRLep"/>
+    <TH1 name="N_photons_MG" source="N_photons"/>
+    <TH1 name="photon_mom_MG" source="photon_mom"/>
+    <TH1 name="top_pt_MG" source="top_pt"/>
+    <TH1 name="top_eta_MG" source="top_eta"/>
+    <TH1 name="top_m_MG" source="top_m"/>
+    <TH1 name="ttbar_prod_MG" source="ttbar_prod"/>
+    <TH1 name="ttbar_BR_MG" source="ttbar_BR"/>
+    <TH1 name="W_m_MG" source="W_m"/>
+    <TH1 name="b_m_MG" source="b_m"/>
+    <TH1 name="PID_MG" source="PID"/>
+
+  </validation>
+
+  <validation type="WZ" file="./results_gen_whizard.root" weight="1">
+    <TH1 name="photon_pt_WZ" source="photon_pt"/>
+    <TH1 name="photon_eta_WZ" source="photon_eta"/>
+    <TH1 name="photon_phi_WZ" source="photon_phi"/>
+    <TH1 name="photon_deltaRLep_WZ" source="photon_deltaRLep"/>
+    <TH1 name="N_photons_WZ" source="N_photons"/>
+    <TH1 name="photon_mom_WZ" source="photon_mom"/>
+    <TH1 name="top_pt_WZ" source="top_pt"/>
+    <TH1 name="top_eta_WZ" source="top_eta"/>
+    <TH1 name="top_m_WZ" source="top_m"/>
+    <TH1 name="ttbar_prod_WZ" source="ttbar_prod"/>
+    <TH1 name="ttbar_BR_WZ" source="ttbar_BR"/>
+    <TH1 name="W_m_WZ" source="W_m"/>
+    <TH1 name="b_m_WZ" source="b_m"/>
+    <TH1 name="PID_WZ" source="PID"/>
+
+  </validation>
+
+  <superimpose name="photon_pt" title="photon_pt" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="photon_pt_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="photon_pt_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="photon_eta" title="photon_eta" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="photon_eta_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="photon_eta_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="photon_phi" title="photon_phi" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="photon_phi_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="photon_phi_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="photon_deltaRLep" title="photon_deltaRLep" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="photon_deltaRLep_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="photon_deltaRLep_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="N_photons" title="N_photons" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true" Option="HIST">
+    <superimposeItem name="N_photons_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="N_photons_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="photon_mom" title="photon_mom" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true" Option="HIST">
+    <superimposeItem name="photon_mom_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="photon_mom_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="top_pt" title="top_pt" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="top_pt_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="top_pt_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="top_eta" title="top_eta" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="top_eta_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="top_eta_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="ttbar_prod" title="ttbar_prod" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true" Option="HIST">
+    <superimposeItem name="ttbar_prod_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="ttbar_prod_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="ttbar_BR" title="ttbar_BR" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true" Option="HIST">
+    <superimposeItem name="ttbar_BR_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="ttbar_BR_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="top_m" title="top_m" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="top_m_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="top_m_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+<!--  <superimpose name="W_m" title="W_m" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="W_m_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="W_m_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+-->
+  <superimpose name="b_m" title="b_m" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true">
+    <superimposeItem name="b_m_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="b_m_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+  <superimpose name="PID" title="PID" YTitle="Arbitrary Units" Normalize="true" Stack="false" SubBanner="" PlotDiff="true" Option="HIST">
+    <superimposeItem name="PID_MG" color="2" legend="Madgraph"/>
+    <superimposeItem name="PID_WZ" color="1" legend="Whizard"/>
+  </superimpose>
+
+</cuy>
